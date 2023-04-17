@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <style>
+        body{
+            width: 100%;
+            margin: 0;
+            background-color: #9c9c9c;
+        }
+        .content{
+            width: 85%;
+            height: auto;
+            background-color: #ffffff;
+            padding: 0;
+            margin: 0 auto 0 auto;
+        }
+        section{
+            background-color: #463f3f;
+            height: 550px;
+            width: 100%;
+            color: #f3f2f2;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .dvs{
+            height: 550px; width: 100%;
+            padding: 0 20px 0 20px;
+            font-size: 2em;
+        }
+        /**********************************************           DEVS1         ****************************/
+        #dvs1{
+            background-color: #6fd1ff;
+        }
+        /**********************************************           DEVS2         ***************************/
+        /*for totall items in the devs2 */
+        #dvs2{
+            /*margin: 0 0 5px 0;*/
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: baseline;
+            align-content: stretch;
+        }
+        /*p and h styling with each other*/
+        #dvs2 .subs .text{
+            /*margin: 0 0 5px 0;*/
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            align-content: space-around;
+        }
+        #dvs2 .subs .img{
+            width: 60px;
+            height: 60px;
+            margin: 0px 10px 0 0 ;
+            border: solid #313131 2px;
+        }
+
+        /*just for styling 3 contents of every .subs containing img, h and p */
+        #dvs2 .subs{
+            padding: 0 20px 0 20px;
+            margin: 12px 0 0 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        /*seprator itself styling*/
+        #dvs2 .seprator{
+            width: 300px;height: 2px;
+            /*margin: 5px;*/
+            background-color: #3a3a3a;
+        }
+        /*********************************************************** DEVS4  ************************* */
+        #dvs4{
+            display: flex;
+            flex-direction: column;
+        }
+        #dvs4 .sub{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        
+        #dvs4 .imag{
+            border: solid #313131 2px;
+            width:80px; height:80px;
+            margin: 1px; padding: 0;
+            src: url('moz.png');
+            background: image('moz.png');
+        }
+        #dvs4 .img{
+            border: solid #313131 2px;
+            src: url('moz.png');
+            background: image('moz.png');
+        }
+        /*
+        section 
+            #dvs1.dvs
+                h3
+                p
+            #dvs2.dvs
+                h3
+                #subs1.subs
+                    img.img
+                    .text
+                        h5
+                        p
+                .seprator
+                #subs2.subs
+                    img.img
+                    .text
+                        h5
+                        p
+                .seprator
+                #subs3.subs
+                    img.img
+                    .text
+                        h5
+                        p
+            #dvs3.dvs
+                h3
+                #s1.s
+                    .text
+                        h5
+                        p
+                #s2.s
+                    .text
+                        h5
+                        p
+                #s3.s
+                    .text
+                        h5
+                        p
+
+            #dvs4.dvs
+                h3
+                #sub1.sub
+                    img#imag$.imag*4
+                #sub2.sub
+                    img#imag$.imag*4
+                h3
+                #b.b
+                    img#img$.img*10
+
+        */
+        /***************************************************************************************************/
+        i{
+            font-style: italic;
+            font-weight: bold;
+            color: #f3f2f2;
+        }
+        p{
+            color: #999999;
+        }
+
+        .footer{
+            background-color: #313131;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            padding: 0 ;
+        }
+        /*for copyright and buttons*/
+        .footer_contents{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
+        /*for home portfolio blog contact buttons near each other*/
+        .footer .footer_contents .items{
+            margin-right: 20px;
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        
+
+        /*
+            copyright 
+        .footer .footer_contents .p{
+            margin-right: auto;
+            margin-left: 50px;
+        }
+        */
+
+        /* buttons */
+        button{
+            height: 50px;
+            background-color: #313131;
+            color: #999999;
+            border: none;
+        }
+        button:hover{
+            color: #22adee;
+        }
+        .backtotop{
+            margin-top: 500px;
+            margin-left: 700px;
+            position: fixed;
+            width: 60px;height: 60px;
+            border-radius: 30px;
+            background-color: #22adee;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        
+        <a name="here"></a>
+        <div id="up"></div>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p style="color: #525252;">Note that if this is not the latest rust version on your machine,</br> cargo commands may require an override in order to use the correct version.</p>
+        <p> X  <sup>-2</sup> + Y <sup>3</sup> </p>
+        <p>H    <sub>2</sub>O &nbsp; = &nbsp; 2H + 1O</p>
+        <p><b>bold text farzin</b></p>          <br> <p> <strong>bold text with strong sound </strong> </p>
+        <p><i>italic text</i></p>               <br> <p><em>....</em> </p>
+        <p><u>underlined text</u></p>           <br> <p> <ins>.....</ins></p>
+        <p><s>striketrough texts</s></p>        <br> <p> <del>...</del></p>
+        
+    </div>
+    
+    <button id="backToTop" class="backtotop"> <a href="#up">Back to Top</a></button>
+    
+    </table>
+    <section>
+        <div id="dvs1" class="dvs">
+            <h3>Nine</h3>
+            <p style="color: #ffffff;">Note that if this is not the latest rust version on your machine, cargo commands may require an override in order to use the correct version.</p>
+        </div>
+
+        <div id="dvs2" class="dvs">
+            <h3>From the blog</h3>
+            <div id="subs1" class="subs">
+                <img class="img" src="moz.png">
+                <div class="text">
+                    <h5 style="margin: 1px 0 1px 0;padding: 0 1px 0 1px;font-size: 1.5rem; width: 202px;">Standard Post Type</h5>
+                    <p style="margin-top: 3px; padding: 0 1px 0 1px;font-size: 0.6em;">on April 28, 2013</p>
+                </div>
+            </div>
+            <div class="seprator"></div>
+            <div id="subs2" class="subs">
+                <img class="img" src="moz.png">
+                <div class="text">
+                    <h5 style="margin: 1px 0 1px 0;padding: 0 1px 0 1px;font-size: 1.5rem;">Video Post Type</h5>
+                    <p style="margin-top: 3px; padding: 0 1px 0 1px;font-size: 0.6em;">on April 28, 2013</p>
+                </div>
+            </div>
+            <div class="seprator"></div>
+            <div id="subs3" class="subs">
+                <img class="img" src="moz.png">
+                <div class="text">
+                    <h5 style="margin: 1px 0 1px 0;padding: 0 1px 0 1px;font-size: 1.5rem;">Gallery Post Type</h5>
+                    <p style="margin-top: 3px; padding: 0 1px 0 1px;font-size: 0.6em;">on March 4, 2013</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="dvs3" class="dvs">
+            <h3>twitter feed</h3>
+            <div id="s1" class="s">
+                <div class="text">
+                    <p style="font-size: 0.6em;"><i>@mrscrw</i> Haha no worries. I've had my share of client ideas, too:)^TK about 9 hours ago</p>
+                </div>
+            </div>
+            <div id="s2" class="s">
+                <div class="text">
+                    <p style="font-size: 0.6em;"><i>@awanderinsole</i> Also, we can search by email if you can't find the ticket number :)^TK about 11 hours ago</p>
+                </div>
+            </div>
+            <div id="s3" class="s">
+                <div class="text">
+                    <p style="font-size: 0.6em;"><i>@awanderingsole</i> Your ticket number is with the emai that is sent to you when you open a ticket. Have you checked your spam folder?^TK about 11 hours ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="dvs4" class="dvs">
+            <h3>flicka feed</h3>
+            <div id="sub1" class="sub">
+                <img src="moz.png" id="imag1" class="imag" >
+                <img src="moz.png" id="imag2" class="imag" >
+                <img src="moz.png" id="imag3" class="imag" >
+                <img src="moz.png" id="imag4" class="imag" >
+            </div>
+                
+            <div id="sub2" class="sub">
+                <img src="moz.png" id="imag1" class="imag" >
+                <img src="moz.png" id="imag2" class="imag" >
+                <img src="moz.png" id="imag3" class="imag" >
+                <img src="moz.png" id="imag4" class="imag" >
+            </div>
+                
+            <h3>Stay Connected</h3>
+            <div id="b" class="b">
+                <img src="moz.png" alt="" id="img1" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img2" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img3" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img4" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img5" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img6" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img7" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img8" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img9" class="img" width="30px" height="30px">
+                <img src="moz.png" alt="" id="img10" class="img" width="30px" height="30px">
+            </div>
+                
+
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer_contents">
+            <p style="color:#ffffff; padding: 10px;margin: 0 0 0 20px;"><i style="color: #999999;">@COPYRIGHT2012.OWERED BY</i>WORDPRESS</p>
+            <div class="items">
+                <button>HOME</button>
+                <div style="background-color: #ffffff; height: 20px;width: 2px;align-self: center;"></div>
+                <button>PORTFOLIO</button>
+                <div style="background-color: #ffffff; height: 20px;width: 2px;align-self: center;"></div>
+                <button>BLOG</button>
+                <div style="background-color: #ffffff; height: 20px;width: 2px;align-self: center;"></div>
+                <button>CONTACT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
