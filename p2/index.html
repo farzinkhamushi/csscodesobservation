@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move1{
+/* 
+            from{ background-color: pink;}
+            to{background-color: blue; transform: translateX(400px) rotate(180deg);}
+             */
+            /* against saying from then to we use percetages */
+
+
+            /* 0%{}
+            50%{background-color: pink;}
+            100%{background-color: blue; transform: translateX(400px) rotate(180deg);} */
+
+
+            /* 0%{}
+            50%{background-color: blue;width: 50px;height: 50px;transform: translateY(80px)}
+            100%{ transform: translateX(400px) rotate(180deg);} */
+
+            0%{}
+            50%{background-color: blue;width: 50px;height: 50px;
+                transform: translate(200px,80px) rotate(180deg);}
+            100%{ transform: translate(400px , 0) rotate(360deg);}
+            
+        }
+        section{
+            height: 300px;
+            padding: 30px;
+            background-color: aqua;
+        }
+        #dv1{
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+        }
+        section:hover #dv1{
+            animation-name: move1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;  /* after 3 times looks forward and stops */
+            /* animation-fill-mode: backwards; */
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="dv1">Animate</div>
+    </section>
+</body>
+</html>
