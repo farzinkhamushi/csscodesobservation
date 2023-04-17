@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 914px;
+    margin:0 auto;
+    border: none;
+    border-radius: 12px;
+    border: 1px dotted #c59797;
+    display: block;
+    position: relative;
+}
+.container div{
+    display: block;
+}
+.container img.img{
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    /* filter: grayscale(100%) ; */
+    /* filter:  blur(7px); */
+    filter: opacity(0.7);
+    transition: all 0.6s;
+}
+.container img.img:hover{
+    /* filter: grayscale(0%) ; */
+    /* filter:  blur(0); */
+    filter: opacity(1);
+}
+
+#big-img{
+    margin: 20px auto;
+    display: block;
+}
