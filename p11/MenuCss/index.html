@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="#">title1</a></li>
+            <li class="subM" onmouseleave="nav_resetter(this)" onmouseover="nav_wider(this)">
+                <a href="#">title2</a>
+                <ul>
+                    <li><a href="#">sub1</a></li>
+                    <li><a href="#">sub2</a></li>
+                    <li class="subM" onmouseleave="nav_resetter_sub(this)" onmouseover="nav_wider_sub(this)">
+                        <a id="sub3" href="#">sub3</a>
+                        <ul>
+                            <li id="link1"><a href="#">link01</a></li>
+                            <li><a href="#">link02</a></li>
+                            <li><a href="#">link03</a></li>
+                            <li><a href="#">link04</a></li>
+                            <li><a href="#">link05</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">sub4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">title3</a></li>
+            <li class="subM" onmouseleave="nav_resetter(this)" onmouseover="nav_wider(this)">
+                <a href="#">title4</a>
+                <ul>
+                    <li><a href="#">sub1</a></li>
+                    <li><a href="#">sub2</a></li>
+                    <li class="subM" onmouseleave="nav_resetter_sub(this)" onmouseover="nav_wider_sub(this)">
+                        <a id="sub3" href="#">sub3</a>
+                        <ul>
+                            <li id="link1"><a href="#">link1</a></li>
+                            <li><a href="#">link2</a></li>
+                            <li><a href="#">link3</a></li>
+                            <li><a href="#">link4</a></li>
+                            <li><a href="#">link5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">title5</a></li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nam provident obcaecati maiores, at officia velit blanditiis tempora, deserunt voluptatum cumque molestias reiciendis unde similique quam dolor et nulla. Minima expedita pariatur saepe nihil, nobis est obcaecati quaerat deleniti ullam cumque quam iure aperiam maiores aliquam repudiandae. Labore dolore natus maxime ipsum cum? Placeat explicabo tenetur voluptates enim, non doloribus ratione beatae error quae voluptatibus quos deserunt. Dolor, culpa expedita.</p>
+</body>
+    <script>
+        var nav_bar = document.getElementById("nav");
+
+        function nav_resetter(_doc){
+            nav_bar.style.height = _doc.style.height;
+        }
+        
+        function nav_resetter_sub(_doc){
+            nav_bar.style.height = _doc.style.height;
+        }
+        function nav_wider_sub(_doc){
+            //alert('yes');
+            nav_bar.style.height = 250+'px'; 
+        }
+        function nav_wider(_doc){
+            nav_bar.style.height = 160+'px';
+            // let id = null;
+            // clearInterval(id);
+            // id = setInterval(anim_frame, 5);
+            // function anim_frame(){
+            //     if(h==200){
+            //     clearInterval(id);
+            //     }else{
+            //         h++;
+            //         nav_bar.height = h+'px';
+            //     }
+            // }            
+        }
+    </script>
+</html>
