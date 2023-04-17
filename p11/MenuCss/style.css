@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav{
+    /* background-color: #d8b6d6; */
+    background:linear-gradient(#d8b6d6, #7e0278);
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.75s;
+}
+nav a{
+    color: #fff;
+    display: block;
+}
+
+nav li{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #7e0278;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+
+nav li:hover > a{
+    background-color: #4b0147;
+    font-weight: bold;
+}
+nav > ul{
+    background:linear-gradient(#d8b6d6, #91678e);
+    width: 766px;
+    margin: 0 auto;
+}
+
+/* 
+nav ul:hover{
+    height: 250px;
+    background-color: #d8b6d6;
+} 
+*/
+
+
+/* this is for every li >...> ul relation*/
+li ul{
+    /* display: none; */
+    transition: all 0.75s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+}
+
+/* this is for every li > ul relation it means just one child*/
+li:hover > ul{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    top: 30px;
+}
+
+li ul li ul{
+    left: 160px;
+    top: 0;
+}
+li ul li:hover ul{
+    left: 150px;
+    top: 0!important;
+}
+/* 
+    with changing these hover you can control animation
+*/
+
+
+li.subM > a::after{
+    content:"\f101";
+    font-family: 'FontAwesome';
+    margin-left: 5px;
+    transition: all 0.5s;
+}
+li.subM:hover > a::after{
+    content:" \f103";
+    /* transform: rotate(); */
+    font-size: 1.15em;
+}
+
+/* triangle */
+li.subM > a::before{
+    content: '';
+    position: absolute;
+    /* left: 75px; */
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    z-index: 5;
+    border-bottom: 8px solid #7e0278;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+li.subM > a#sub3::before{
+
+    content: '';
+    position: absolute;
+    /* left: 75px; */
+    right: 0;
+    bottom: 25%;
+    transform: translateX(0%);
+    z-index: 5;
+    border-right: 8px solid #7e0278;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+}
+
+li.subM > a:before ul:hover{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    transform: translateX(0%);
+    z-index: 10;
+    border-right: 8px solid #a80141;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+}
